@@ -80,7 +80,7 @@
           position: static;
           transform: translateY(0);
           border: none;
-          border-radius: 0;
+          border-radius: 0 0 16px 16px;
           box-shadow: none;
           border-top: 1px solid $grey200;
           padding: 4px 0;
@@ -106,8 +106,9 @@
     .main-view {
       height: 400px;
       border-radius: $radius-16;
-      .swiper-slide {
+      overflow: hidden;
 
+      .swiper-slide {
         .slide-content {
           top: 8%;
           left: 10%;
