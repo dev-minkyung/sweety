@@ -232,6 +232,10 @@ header.sticky {
     border-radius: 16px;
     overflow: hidden;
   }
+  main .main-view .swiper-slide {
+    border-radius: 16px;
+    overflow: hidden;
+  }
   main .main-view .swiper-slide .slide-content {
     top: 8%;
     left: 10%;

@@ -110,6 +110,8 @@
       overflow: hidden;
 
       .swiper-slide {
+        border-radius: $radius-16;
+        overflow: hidden; 
         .slide-content {
           top: 8%;
           left: 10%;
