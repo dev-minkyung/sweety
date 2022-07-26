@@ -20,7 +20,7 @@ window.onscroll = function() {
 /* Main View Silde */
 const swiper = new Swiper('.main-view', {
   autoplay: {
-    delay: 3500,
+    delay: 4500,
   },
   loop: true,
 
