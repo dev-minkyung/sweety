@@ -210,6 +210,8 @@ header.sticky {
     position: static;
     transform: translateY(0);
     border: none;
+    border-radius: 0;
+    box-shadow: none;
     border-top: 1px solid #F2F3F4;
     padding: 4px 0;
   }
@@ -226,6 +228,7 @@ header.sticky {
   }
   main .main-view {
     height: 400px;
+    border-radius: 16px;
   }
   main .main-view .swiper-slide .slide-content {
     top: 8%;
