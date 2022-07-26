@@ -1,0 +1,239 @@
+@charset "UTF-8";
+/* COMMON */
+body {
+  height: 4000px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+  max-width: 1920px;
+  font-family: "Roboto", "Noto Sans KR", "sans-serif";
+}
+
+section {
+  padding-top: 62px;
+}
+
+.inner {
+  position: relative;
+  padding: 0 80px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.875rem;
+  line-height: 20px;
+}
+
+.logo a {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 68px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.btn {
+  display: inline-block;
+}
+
+.btn.btn-reverse {
+  display: inline-block;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 68px;
+  background-color: #ffffff;
+  /* Header 스크롤 이벤트 */
+}
+header .inner {
+  display: flex;
+  justify-content: space-between;
+}
+header nav {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  height: 100%;
+}
+header nav .main-menu {
+  /* my-menu 클릭 이벤트 */
+}
+header nav .main-menu .menu-list ul {
+  height: 100%;
+  display: flex;
+  gap: 32px;
+}
+header nav .main-menu .menu-list ul li {
+  line-height: 68px;
+}
+header nav .main-menu .menu-list .sub-menu {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  transform: translateY(100%);
+}
+header nav .main-menu .login {
+  transition: opacity 0.8s;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  right: 80px;
+  transform: translateY(100%);
+  padding: 4px 0;
+  background-color: #ffffff;
+  border: 1px solid #DEDEDE;
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+header nav .main-menu .login ul li {
+  cursor: pointer;
+  width: 160px;
+  padding: 8px 16px;
+  line-height: 24px;
+}
+header nav .main-menu .login ul li:hover {
+  background-color: #F6F7F8;
+}
+header nav .main-menu .login ul li i {
+  padding-right: 4px;
+}
+header nav .main-menu.active .login {
+  visibility: visible;
+  opacity: 1;
+}
+header nav .my-menu {
+  position: relative;
+}
+header nav .my-menu .icon-my {
+  padding: 16px 0;
+  cursor: pointer;
+}
+header nav .my-menu .icon-my img {
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  border: 2px solid #DEDEDE;
+  border-radius: 50%;
+}
+header.sticky {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  padding-top: 68px;
+}
+main .main-view {
+  width: 100%;
+  height: 600px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  /* Main View 슾라이드 */
+  /* Main View 페이징 */
+  /* Main View 좌우버튼 */
+}
+main .main-view .swiper-slide {
+  position: relative;
+}
+main .main-view .swiper-slide .slide-content {
+  position: absolute;
+  top: 16%;
+  left: 110px;
+  z-index: 1;
+}
+main .main-view .swiper-slide .slide-content .cate {
+  font-size: 1rem;
+  font-weight: 300;
+}
+main .main-view .swiper-slide .slide-content .slide-title {
+  font-size: 3.25rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 12px 0 48px;
+}
+main .main-view .swiper-slide .slide-content .slide-sub {
+  font-size: 1rem;
+  font-weight: 400;
+}
+main .main-view .swiper-slide .slide-img {
+  height: 100%;
+}
+main .main-view .swiper-slide .slide-img .bg-text {
+  position: absolute;
+  top: 2%;
+  right: 6%;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 8rem;
+  font-family: "Freckle Face", cursive;
+  text-transform: uppercase;
+}
+main .main-view .swiper-slide .slide-img img {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  height: 100%;
+}
+main .main-view .swiper-pagination {
+  position: absolute;
+  bottom: 16%;
+  left: 110px;
+  z-index: 1;
+  display: inline-block;
+  width: 80px;
+  font-size: 1rem;
+  padding: 8px 12px;
+  color: #868686;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+main .main-view .swiper-pagination .swiper-pagination-current,
+main .main-view .swiper-pagination .swiper-pagination-total {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+main .main-view .swiper-pagination .swiper-pagination-current {
+  color: #191919;
+}
+main .main-view .swiper-button-prev,
+main .main-view .swiper-button-next {
+  width: 20px;
+  height: 20px;
+  padding: 8px;
+  border-radius: 50%;
+  color: #868686;
+  z-index: 1;
+}
+main .main-view .swiper-button-prev::after,
+main .main-view .swiper-button-next::after {
+  font-size: 1rem;
+  text-align: center;
+  line-height: 20px;
+  width: 100%;
+  height: 100%;
+}
+main .main-view .swiper-button-prev:hover,
+main .main-view .swiper-button-next:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #191919;
+}

@@ -1,0 +1,107 @@
+@import './common.scss';
+
+main {
+  padding-top: 68px;
+  .main-view {
+    width: 100%;
+    height: 600px;
+    border-radius: $radius-16;
+    overflow: hidden;
+    position: relative;
+
+    /* Main View 슾라이드 */
+    .swiper-slide {
+      position: relative;
+
+      .slide-content {
+        position: absolute;
+        top: 16%;
+        left: 110px;
+        z-index: 1;
+        .cate {
+          font-size: 1rem;
+          font-weight: 300;
+        }
+        .slide-title {
+          font-size: 3.25rem;
+          font-weight: 900;
+          line-height: 1.2;
+          margin: 12px 0 48px;
+        }
+        .slide-sub {
+          font-size: 1rem;
+          font-weight: 400;
+        }
+      }
+    
+      .slide-img {
+        height: 100%;
+        .bg-text {
+          position: absolute;
+          top: 2%;
+          right: 6%;
+          color: rgba($white, .6);
+          font-size: 8rem;
+          font-family: 'Freckle Face', cursive;
+          text-transform: uppercase;
+        }
+        img {
+          position: absolute;
+          bottom: 0;
+          right: 10%;
+          height: 100%;
+        }
+      }
+    }
+
+    /* Main View 페이징 */
+    .swiper-pagination {
+      position: absolute;
+      bottom: 16%;
+      left: 110px;
+      z-index: 1;
+      display: inline-block;
+      width: 80px;
+      font-size: 1rem;
+      padding: 8px 12px;
+      color: $grey400;
+      border-radius: $radius-8;
+      background-color: rgba($white, .3);
+
+      .swiper-pagination-current,
+      .swiper-pagination-total {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+      }
+
+      .swiper-pagination-current {
+        color: $black;
+      }
+    }
+
+    /* Main View 좌우버튼 */
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 20px;
+      height: 20px;
+      padding: 8px;
+      border-radius: 50%;
+      color: $grey400;
+      z-index: 1;
+    }
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+      font-size: 1rem;
+      text-align: center;
+      line-height: 20px;
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+      background-color: rgba($white, .6);
+      color: $black;
+    }
+  }
+}

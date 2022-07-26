@@ -1,0 +1,145 @@
+@import './common.scss';
+
+/* TABLET */
+@media screen and (max-width:1024px) {
+  .inner {
+    padding: 0 20px;
+  }
+  /* HEADER */
+  header {
+    nav {
+      .main-menu {
+        .login {
+          right: 20px;
+        }
+      }
+    }
+  }
+
+  /* MAIN */
+  main {
+    .main-view {
+      .swiper-slide {
+        .slide-content {
+          left: 60px;
+        }
+        .slide-img {
+          .bg-text {
+            top: 5%;
+            font-size: 7rem;
+          }
+          img {
+            right: 5%;
+            height: 90%;
+          }
+        }
+      }
+      .swiper-pagination {
+        left: 60px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  /* HEADER */
+  header {
+    height: 60px;
+    .logo {
+      a {
+        line-height: 60px;
+      }
+    }
+    nav {
+      position: relative;
+      .main-menu {
+        transition: opacity .8s;
+        visibility: hidden;
+        opacity: 0;
+        
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translateY(100%);
+        @include menuCard;
+        
+        .menu-list {
+          padding: 4px 0;
+          ul {
+            flex-direction: column;
+            gap: 0;
+            
+            li {
+              line-height: 24px;
+              @include menuLink;
+            }
+          }
+        }
+        .login {
+          position: static;
+          transform: translateY(0);
+          border: none;
+          border-top: 1px solid $grey200;
+          padding: 4px 0;
+        }
+
+        &.active {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+
+      .my-menu {
+        .icon-my {
+          padding: 12px 0;
+        }
+      }
+    }
+  }
+
+  /* MAIN */
+  main {
+    padding-top: 60px; 
+    .main-view {
+      height: 400px;
+      .swiper-slide {
+
+        .slide-content {
+          top: 8%;
+          left: 10%;
+          .cate {
+            font-size: 0.875rem;
+          }
+          .slide-title {
+            font-size: 2rem;
+          }
+          .slide-sub {
+            display: none;
+          }
+        }
+
+        .slide-img {
+          .bg-text {
+            top: 40%;
+            font-size: 4rem;
+          }
+          img {
+            height: 70%;
+          }
+        }
+      }
+      .swiper-pagination {
+        bottom: 6%;
+        left: 8%;
+        width: 60px;
+        font-size: 0.875rem;
+        padding: 4px;
+      }
+      .swiper-button-prev::after,
+      .swiper-button-next::after {
+        display: none;
+      }
+    }
+  }
+}

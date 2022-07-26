@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/* COMMON */
+body {
+  height: 4000px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+  max-width: 1920px;
+  font-family: "Roboto", "Noto Sans KR", "sans-serif";
+}
+
+section {
+  padding-top: 62px;
+}
+
+.inner {
+  position: relative;
+  padding: 0 80px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.875rem;
+  line-height: 20px;
+}
+
+.logo a {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 68px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.btn {
+  display: inline-block;
+}
+
+.btn.btn-reverse {
+  display: inline-block;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 68px;
+  background-color: #ffffff;
+  /* Header 스크롤 이벤트 */
+}
+header .inner {
+  display: flex;
+  justify-content: space-between;
+}
+header nav {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  height: 100%;
+}
+header nav .main-menu {
+  /* my-menu 클릭 이벤트 */
+}
+header nav .main-menu .menu-list ul {
+  height: 100%;
+  display: flex;
+  gap: 32px;
+}
+header nav .main-menu .menu-list ul li {
+  line-height: 68px;
+}
+header nav .main-menu .menu-list .sub-menu {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  transform: translateY(100%);
+}
+header nav .main-menu .login {
+  transition: opacity 0.8s;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  right: 80px;
+  transform: translateY(100%);
+  padding: 4px 0;
+  background-color: #ffffff;
+  border: 1px solid #DEDEDE;
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+header nav .main-menu .login ul li {
+  cursor: pointer;
+  width: 160px;
+  padding: 8px 16px;
+  line-height: 24px;
+}
+header nav .main-menu .login ul li:hover {
+  background-color: #F6F7F8;
+}
+header nav .main-menu .login ul li i {
+  padding-right: 4px;
+}
+header nav .main-menu.active .login {
+  visibility: visible;
+  opacity: 1;
+}
+header nav .my-menu {
+  position: relative;
+}
+header nav .my-menu .icon-my {
+  padding: 16px 0;
+  cursor: pointer;
+}
+header nav .my-menu .icon-my img {
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  border: 2px solid #DEDEDE;
+  border-radius: 50%;
+}
+header.sticky {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
