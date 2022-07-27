@@ -107,6 +107,7 @@ main {
 }
 
 .icon-menu {
+  padding-top: 48px;
   ul {
     display: flex;
     justify-content: space-between;
@@ -154,7 +155,6 @@ main {
     gap: 24px;
     height: 460px;
     padding: 0 6%;
-    //box-sizing: border-box;
 
     .product-img {
       flex-basis: 50%;
