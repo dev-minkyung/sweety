@@ -498,4 +498,8 @@ main .main-view .swiper-button-next:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 16px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
 }

@@ -265,6 +265,10 @@ main {
       left: 50%;
       transform: translate(-50%, -50%);
       border-radius: $radius-16;
+      overflow: hidden;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
     }
   }
 }
