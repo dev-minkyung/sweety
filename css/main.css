@@ -447,6 +447,10 @@ main .main-view .swiper-button-next:hover {
 .product .product-content .product-info .product-point li:last-child {
   padding: 0;
 }
+.product .product-content .product-info button {
+  border-radius: 8px;
+  box-shadow: 4px 4px black;
+}
 .product .doughp {
   margin-bottom: 180px;
 }
@@ -478,9 +482,6 @@ main .main-view .swiper-button-next:hover {
   width: 65%;
   margin: 0 auto;
   position: relative;
-  border-radius: 16px;
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
   overflow: hidden;
 }
 .youtube .youtube-play::before {
@@ -497,7 +498,5 @@ main .main-view .swiper-button-next:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 16px;
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
   overflow: hidden;
 }

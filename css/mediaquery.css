@@ -404,8 +404,6 @@ main .main-view .swiper-button-next::after {
   }
   .product .product-content .product-info button {
     width: 100%;
-    border-radius: 8px;
-    box-shadow: 4px 4px black;
   }
   .product .product-content .product-info button a {
     width: 100%;
@@ -443,7 +441,5 @@ main .main-view .swiper-button-next::after {
   .youtube .youtube-play #player {
     width: 140%;
     height: 140%;
-    border-radius: 16px;
-    overflow: hidden;
   }
 }

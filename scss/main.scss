@@ -208,6 +208,10 @@ main {
           }
         }
       }
+      button {
+        border-radius: $radius-8;
+        box-shadow: 4px 4px black;
+      }
     }
   }
   .doughp {
@@ -244,11 +248,7 @@ main {
     width: 65%;
     margin: 0 auto;
     position: relative;
-    border-radius: $radius-16;
-    -webkit-border-radius: $radius-16;
-    -moz-border-radius: $radius-16;
     overflow: hidden;
-
 
     &::before {
       content: '';
@@ -265,8 +265,6 @@ main {
       left: 50%;
       transform: translate(-50%, -50%);
       border-radius: $radius-16;
-      -webkit-border-radius: $radius-16;
-      -moz-border-radius: $radius-16;
       overflow: hidden;
     }
   }
