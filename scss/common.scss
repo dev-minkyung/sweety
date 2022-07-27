@@ -1,6 +1,6 @@
 
 
-$brand-font: 'Galada', cursive;
+$brand-font: 'Freckle Face', cursive;
 
 $brand-color: #EC6472;
 $white: #ffffff;
@@ -29,7 +29,7 @@ body {
 }
 
 section {
- padding-top: 62px;
+ padding-top: 160px;
 }
 
 .inner {
@@ -66,6 +66,20 @@ button {
 
 .btn {
   display: inline-block;
+  width: 220px;
+  padding: 16px 40px;
+  box-sizing: border-box;
+  border: 1px solid $black;
+  border-radius: $radius-8;
+  box-shadow: 4px 4px black;
+  transition: all .6s;
+
+  &:hover {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+    background-color: $black;
+    color: $white;
+  }
 }
 
 .btn.btn-reverse {

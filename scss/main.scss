@@ -145,3 +145,74 @@ main {
     }
   }
 }
+
+.product {
+  .product-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    height: 460px;
+    padding: 0 6%;
+    //box-sizing: border-box;
+
+    .product-img {
+      flex-basis: 50%;
+      position: relative;
+      img {
+        width: 540px;
+        max-width: 600px;
+      }
+      &::before {
+        content: '';
+        display: block;
+        width: 90%;
+        height: 100%;
+        border-radius: 16px 50% 50% 16px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color: #EFF4F9;
+      }
+    }
+
+    .product-info {
+      flex-basis: 50%;
+      padding-left: 5%;
+      box-sizing: border-box;
+      .product-title {
+        font-size: 5rem;
+        font-family: 'Freckle Face', cursive;
+        text-transform: uppercase;
+      }
+      .product-point {
+        margin: 32px 0 48px;
+        li {
+          padding-bottom: 12px;
+          i {
+            margin-right: 12px;
+          }
+          &:last-child {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+  .doughp {
+    margin-bottom: 180px;
+    .product-img {
+      order: 2;
+      &::before{
+        width: 70%;
+        height: 110%;
+        border-radius: 50% 50% 16px 16px;
+        background-color: #EFE5D5;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
