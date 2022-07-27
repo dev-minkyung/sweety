@@ -351,7 +351,6 @@ main .main-view .swiper-button-next::after {
     gap: 0;
     position: relative;
     height: auto;
-    overflow: visible;
   }
   .product .product-content::before {
     content: "";
@@ -387,6 +386,7 @@ main .main-view .swiper-button-next::after {
   }
   .product .product-content .product-info button {
     width: 100%;
+    box-shadow: 4px 4px black;
   }
   .product .product-content .product-info button a {
     width: 100%;
