@@ -31,6 +31,13 @@ a {
   line-height: 20px;
 }
 
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.4;
+}
+
 .logo a {
   font-size: 1.75rem;
   font-weight: 700;
@@ -48,10 +55,10 @@ button {
   width: 220px;
   padding: 16px 40px;
   box-sizing: border-box;
-  border: 1px solid #191919;
+  border: 2px solid #191919;
   border-radius: 8px;
-  box-shadow: 4px 4px black;
-  transition: all 0.6s;
+  box-shadow: 4px 4px #191919;
+  transition: all 0.4s;
 }
 .btn:hover {
   transform: translate(4px, 4px);
@@ -60,8 +67,20 @@ button {
   color: #ffffff;
 }
 
-.btn.btn-reverse {
+.btn--reverse {
   display: inline-block;
+}
+
+.btn--text {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.4;
+  color: #EC6472;
+  padding: 16px 0 32px;
+}
+.btn--text i {
+  margin-left: 4px;
 }
 
 /* HEADER */
@@ -402,42 +421,25 @@ main .main-view .swiper-button-next::after {
   .product .doughp .product-info {
     order: 2;
   }
-  /*
-  .product {
-    .product-content {
-      flex-direction: column;
-      gap: 16px;
-      height: auto;
-      font-size: .875rem;
-      .product-info {
-        width: 100%;
-        .product-title {
-          font-size: 3rem;
-        }
-        .product-point {
-          margin: 16px 0 24px;
-        }
-      }
-    }
-    .doughp {
-      margin-bottom: 80px;
-      .product-img {
-        order: 1;
-        padding: 20px 0;
-        img {
-          width: auto;
-          height: 220px;
-          margin: 0 auto;
-        }
-        &::before {
-          width: 80%;
-          height: 100%;
-        }
-      }
-      .product-info {
-        order: 2;
-      }
-    }
+  /* Youtube */
+  .youtube {
+    background-size: 105%;
   }
-  */
+  .youtube .youtube-title h2 {
+    font-size: 1rem;
+  }
+  .youtube .youtube-title .youtube-link a {
+    font-size: 0.875rem;
+    padding: 12px 0 24px;
+  }
+  .youtube .youtube-play {
+    width: 95%;
+  }
+  .youtube .youtube-play::before {
+    padding-top: 75%;
+  }
+  .youtube .youtube-play #player {
+    width: 140%;
+    height: 140%;
+  }
 }

@@ -31,6 +31,13 @@ a {
   line-height: 20px;
 }
 
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.4;
+}
+
 .logo a {
   font-size: 1.75rem;
   font-weight: 700;
@@ -48,10 +55,10 @@ button {
   width: 220px;
   padding: 16px 40px;
   box-sizing: border-box;
-  border: 1px solid #191919;
+  border: 2px solid #191919;
   border-radius: 8px;
-  box-shadow: 4px 4px black;
-  transition: all 0.6s;
+  box-shadow: 4px 4px #191919;
+  transition: all 0.4s;
 }
 .btn:hover {
   transform: translate(4px, 4px);
@@ -60,8 +67,20 @@ button {
   color: #ffffff;
 }
 
-.btn.btn-reverse {
+.btn--reverse {
   display: inline-block;
+}
+
+.btn--text {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.4;
+  color: #EC6472;
+  padding: 16px 0 32px;
+}
+.btn--text i {
+  margin-left: 4px;
 }
 
 /* HEADER */
@@ -222,6 +241,22 @@ header.sticky {
     padding: 12px 0;
   }
 }
+@-webkit-keyframes shake {
+  0% {
+    transform: translateY(0);
+  }
+  0% {
+    transform: translateY(-6px);
+  }
+}
+@keyframes shake {
+  0% {
+    transform: translateY(0);
+  }
+  0% {
+    transform: translateY(-6px);
+  }
+}
 main {
   padding-top: 68px;
 }
@@ -352,8 +387,11 @@ main .main-view .swiper-button-next:hover {
   margin-bottom: 6px;
 }
 .icon-menu ul li:hover a {
-  border: 1px solid #EC6472;
-  box-sizing: border-box;
+  background-color: #edeff1;
+}
+.icon-menu ul li:hover img {
+  -webkit-animation: shake 1.2s 1 ease;
+          animation: shake 1.2s 1 ease;
 }
 
 .product .product-content {
@@ -393,6 +431,7 @@ main .main-view .swiper-button-next:hover {
   font-size: 5rem;
   font-family: "Freckle Face", cursive;
   text-transform: uppercase;
+  text-align: left;
 }
 .product .product-content .product-info .product-point {
   margin: 32px 0 48px;
@@ -420,4 +459,38 @@ main .main-view .swiper-button-next:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/*  YOUTUBE */
+.youtube {
+  background-image: url("../images/bg-heartLine.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: 80%;
+}
+.youtube .youtube-title .youtube-link {
+  display: block;
+  margin: 0 auto;
+}
+.youtube .youtube-play {
+  width: 65%;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.youtube .youtube-play::before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-top: 56.25%;
+}
+.youtube .youtube-play #player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 16px;
 }
