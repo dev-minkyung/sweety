@@ -50,9 +50,9 @@ button {
   box-sizing: border-box;
   border: 1px solid #191919;
   border-radius: 8px;
-  box-shadow: 4px 4px 0 black;
-  -webkit-box-shadow: 4px 4px 0 black;
-  -moz-box-shadow: 4px 4px 0 black;
+  box-shadow: 4px 4px black;
+  -webkit-box-shadow: 4px 4px black;
+  -moz-box-shadow: 4px 4px black;
   transition: all 0.6s;
   overflow: visible;
 }
