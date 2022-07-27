@@ -246,6 +246,9 @@ main {
     position: relative;
     border-radius: $radius-16;
     overflow: hidden;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
 
     &::before {
       content: '';

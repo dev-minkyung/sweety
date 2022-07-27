@@ -41,7 +41,9 @@ h2 {
 .logo a {
   font-size: 1.75rem;
   font-weight: 700;
+  font-family: "Freckle Face", cursive;
   line-height: 68px;
+  color: #EC6472;
 }
 
 button {
@@ -478,6 +480,9 @@ main .main-view .swiper-button-next:hover {
   position: relative;
   border-radius: 16px;
   overflow: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
 }
 .youtube .youtube-play::before {
   content: "";
