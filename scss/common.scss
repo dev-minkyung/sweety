@@ -45,7 +45,7 @@ img {
 a {
   display: inline-block;
   text-decoration: none;
-  color: inherit;
+  color: $black;
   font-size: 0.875rem;
   line-height: 20px;
 }
@@ -62,7 +62,6 @@ button {
   background-color: transparent;
   border: none;
   padding: 0;
-  overflow: visible;
 }
 
 .btn {
@@ -76,7 +75,7 @@ button {
   -webkit-box-shadow: 4px 4px black;
   -moz-box-shadow: 4px 4px black;
   transition: all .6s;
-  overflow: visible;
+  
 
   &:hover {
     transform: translate(4px, 4px);

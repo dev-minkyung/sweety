@@ -195,7 +195,8 @@
         }
         button {
           width: 100%;
-          box-shadow: 4px 4px transparent;
+          border-radius: $radius-8;
+          box-shadow: 4px 4px black;
           a {
             width: 100%;
             padding: 12px 0;
