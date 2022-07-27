@@ -281,10 +281,6 @@ header.sticky {
   section {
     padding-top: 60px;
   }
-  a {
-    padding: 12px 0;
-    width: 100%;
-  }
   /* MAIN */
   main {
     padding-top: 60px;
@@ -355,6 +351,7 @@ main .main-view .swiper-button-next::after {
     gap: 0;
     position: relative;
     height: auto;
+    overflow: visible;
   }
   .product .product-content::before {
     content: "";
@@ -390,7 +387,6 @@ main .main-view .swiper-button-next::after {
   }
   .product .product-content .product-info button {
     width: 100%;
-    overflow: visible;
   }
   .product .product-content .product-info button a {
     width: 100%;
