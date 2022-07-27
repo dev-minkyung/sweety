@@ -232,7 +232,6 @@
           font-size: .875rem;
           padding: 12px 0 24px;
         }
-        
       }
     }
 
@@ -244,6 +243,8 @@
       #player {
         width: 140%;
         height: 140%;
+        border-radius: $radius-16;
+        overflow: hidden;
       }
     }
   }
