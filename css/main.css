@@ -479,10 +479,9 @@ main .main-view .swiper-button-next:hover {
   margin: 0 auto;
   position: relative;
   border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
   overflow: hidden;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
 }
 .youtube .youtube-play::before {
   content: "";
