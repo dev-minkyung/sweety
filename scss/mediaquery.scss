@@ -244,4 +244,29 @@
       }
     }
   }
+
+  /* Event */
+  .event {
+    .event-area {
+      padding: 0 32px;
+      overflow: visible;
+
+      .event-button-prev {
+        left: 4px;
+      }
+      .event-button-next {
+        right: 4px;
+      }
+    }
+
+  }
+}
+
+
+/* 모바일 웹 호버 효과 제외 */
+@media (hover: hover) {
+  .event-button-prev:hover,
+  .event-button-next:hover {
+    background-color: $grey300;
+  }
 }

@@ -32,7 +32,7 @@ a {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 700;
   text-align: center;
   line-height: 1.4;
@@ -257,6 +257,40 @@ header.sticky {
   }
   0% {
     transform: translateY(-6px);
+  }
+}
+@-webkit-keyframes go {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(4px);
+  }
+  40% {
+    transform: translateX(0);
+  }
+  60% {
+    transform: translateX(4px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes go {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(4px);
+  }
+  40% {
+    transform: translateX(0);
+  }
+  60% {
+    transform: translateX(4px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 main {
@@ -499,4 +533,135 @@ main .main-view .swiper-button-next:hover {
   transform: translate(-50%, -50%);
   border-radius: 16px;
   overflow: hidden;
+}
+
+/* EVENT */
+.event .event-intro .event-btn {
+  display: block;
+  margin: 12px auto 32px;
+  transition: all 1s;
+}
+.event .event-intro .event-btn a {
+  font-size: 1rem;
+  line-height: 32px;
+  color: #EC6472;
+}
+.event .event-intro .event-btn a i {
+  font-size: 0.875rem;
+  margin: 0 4px;
+}
+.event .event-intro .event-btn:hover a {
+  font-weight: 700;
+}
+.event .event-intro .event-btn:hover a i {
+  -webkit-animation: go 2s infinite ease-in-out;
+          animation: go 2s infinite ease-in-out;
+}
+.event .event-area {
+  overflow: hidden;
+  /* 슬라이드 흐림효과*/
+  /* swiper 좌우버튼*/
+}
+.event .event-area .event-content {
+  border: 2px solid #191919;
+  border-radius: 16px;
+  box-sizing: border-box;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  overflow: hidden;
+}
+.event .event-area .event-content a {
+  width: 100%;
+}
+.event .event-area .event-content .event-img {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.event .event-area .event-content .event-img::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+.event .event-area .event-content .event-img img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.event .event-area .event-content .event-img .event-run {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.event .event-area .event-content .event-img .event-run.open {
+  background-color: #EC6472;
+  color: #ffffff;
+}
+.event .event-area .event-content .event-img .event-run.close {
+  background-color: #868686;
+  color: #ffffff;
+}
+.event .event-area .event-content .event-info {
+  padding: 24px 24px 32px;
+}
+.event .event-area .event-content .event-info .event-title {
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.event .event-area .event-content .event-info .event-text {
+  margin: 6px 0 24px;
+}
+.event .event-area .event-content .event-info .event-date {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #868686;
+}
+.event .event-area .swiper-slide {
+  opacity: 0.4;
+  transition: opacity 1s;
+  margin: 4px 0;
+}
+.event .event-area .swiper-slide-active {
+  opacity: 1;
+  /*
+  화면에 3개 이외에 다른 슬라이드를 안보이게 overflow:hidden;을 하게되면
+  box-shadow가 잘리게 된다.
+  box-shadow가 전부 보이기 위해 margin값을 주면 해결할 수 있다.
+  */
+}
+.event .event-area .swiper-slide-active:hover {
+  box-shadow: 4px 4px #191919;
+  transform: translate(-2px, -2px);
+}
+.event .event-area .event-button-prev,
+.event .event-area .event-button-next {
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  line-height: 42px;
+  border-radius: 50%;
+  border: 2px solid #191919;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(100%);
+  z-index: 1;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.event .event-area .event-button-prev {
+  left: 20px;
+}
+.event .event-area .event-button-next {
+  right: 20px;
 }

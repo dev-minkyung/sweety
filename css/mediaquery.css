@@ -32,7 +32,7 @@ a {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 700;
   text-align: center;
   line-height: 1.4;
@@ -441,5 +441,23 @@ main .main-view .swiper-button-next::after {
   .youtube .youtube-play #player {
     width: 140%;
     height: 140%;
+  }
+  /* Event */
+  .event .event-area {
+    padding: 0 32px;
+    overflow: visible;
+  }
+  .event .event-area .event-button-prev {
+    left: 4px;
+  }
+  .event .event-area .event-button-next {
+    right: 4px;
+  }
+}
+/* 모바일 웹 호버 효과 제외 */
+@media (hover: hover) {
+  .event-button-prev:hover,
+.event-button-next:hover {
+    background-color: #DEDEDE;
   }
 }

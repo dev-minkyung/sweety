@@ -5,6 +5,13 @@
   0% { transform: translateY(0)}
   0% { transform: translateY(-6px)}
 }
+@keyframes go {
+  0% {transform: translateX(0);}
+  20% {transform: translateX(4px);}
+  40% {transform: translateX(0);}
+  60% {transform: translateX(4px);}
+  100% {transform: translateX(0);}
+}
 
 main {
   padding-top: 68px;
@@ -266,6 +273,158 @@ main {
       transform: translate(-50%, -50%);
       border-radius: $radius-16;
       overflow: hidden;
+    }
+  }
+}
+
+
+
+
+/* EVENT */
+.event {
+
+  .event-intro {
+    .event-btn {
+      display: block;
+      margin: 12px auto 32px;
+      transition: all 1s;
+      a{
+        font-size: 1rem;
+        line-height: 32px;
+        color: $brand-color;
+        i {
+          font-size: 0.875rem;
+          margin:0 4px;
+        }
+      }
+      &:hover {
+        a {
+          font-weight: 700;
+          i {
+            animation: go 2s infinite ease-in-out;
+          }
+        }
+      }
+    }
+  }
+
+  .event-area {
+    overflow: hidden;
+
+    .event-content {
+      border: 2px solid $black;
+      border-radius:  16px;
+      box-sizing: border-box;
+      -webkit-border-radius: 16px;
+      -moz-border-radius: 16px;
+      overflow: hidden;
+
+      a {
+        width: 100%;
+      }
+
+      .event-img {
+        position: relative;
+        width:100%;
+        overflow: hidden;
+
+        &::before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 0;
+          padding-top: 56.25%;
+        }
+        img {
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+        }
+        .event-run {
+          position: absolute;
+          top: 5%;
+          left: 5%;
+          padding: 6px 12px;
+          border-radius: 16px;
+          font-weight: 500;
+          text-transform: uppercase;
+          
+          &.open {
+            background-color: $brand-color;
+            color: $white;
+          }
+
+          &.close {
+            background-color: $grey400;
+            color: $white;
+          }
+        }
+      }
+      
+      .event-info {
+        padding: 24px 24px 32px;
+
+        .event-title {
+          display:inline-block;
+          font-size: 1.25rem;
+          font-weight: bold;
+        }
+        .event-text {
+          margin: 6px 0 24px;
+        }
+        .event-date {
+          font-size: 0.875rem;
+          font-weight: 400;
+          color: $grey400;
+        }
+      }
+    }
+
+    /* 슬라이드 흐림효과*/
+    .swiper-slide {
+      opacity: .4;
+      transition: opacity 1s;
+      margin: 4px 0;
+    }
+    .swiper-slide-active {
+      opacity: 1;
+      &:hover {
+        box-shadow: 4px 4px $black;
+        transform: translate(-2px, -2px);
+      }
+      /*
+      화면에 3개 이외에 다른 슬라이드를 안보이게 overflow:hidden;을 하게되면
+      box-shadow가 잘리게 된다.
+      box-shadow가 전부 보이기 위해 margin값을 주면 해결할 수 있다.
+      */
+    }
+
+    /* swiper 좌우버튼*/
+    .event-button-prev,
+    .event-button-next {
+      width: 42px;
+      height: 42px;
+      text-align: center;
+      line-height: 42px;
+      border-radius: 50%;
+      border: 2px solid $black;
+      background-color: $white;
+      position: absolute;
+      top: 50%;
+      transform: translateY(100%);
+      z-index: 1;
+      outline: none;
+      cursor: pointer;
+      transition: all .4s;
+    }
+    
+    .event-button-prev {
+      left: 20px;
+    }
+    .event-button-next {
+      right:20px;
     }
   }
 }

@@ -36,3 +36,37 @@ const swiper = new Swiper('.main-view', {
 
 });
 
+
+/* event Silde */
+const eventArea = new Swiper('.event-area', {
+  slidesPerView: 1,
+  spaceBetween: 32,
+  centeredSlides: true,
+
+  autoplay: {
+    delay: 5000,
+  },
+  loop: true,
+
+  navigation: {
+    nextEl: ".event-button-next",
+    prevEl: ".event-button-prev",
+  },
+
+  paisination: {
+    el: '.event .swiper-pagination',
+    clickable: true
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
+
+    1025: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
+  }
+});
