@@ -443,8 +443,10 @@ main .main-view .swiper-button-next::after {
     height: 140%;
   }
   /* Event */
-  .event .event-area {
+  .event {
     width: 100vw;
+  }
+  .event .event-area {
     padding: 0 32px;
     overflow: visible;
   }
