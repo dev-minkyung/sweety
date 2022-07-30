@@ -40,7 +40,7 @@ const swiper = new Swiper('.main-view', {
 /* event Silde */
 const eventArea = new Swiper('.event-area', {
   slidesPerView: 1,
-  spaceBetween: 32,
+  spaceBetween: 24,
   centeredSlides: true,
 
   autoplay: {
