@@ -444,6 +444,7 @@ main .main-view .swiper-button-next::after {
   }
   /* Event */
   .event .event-area {
+    width: 100vw;
     padding: 0 32px;
     overflow: visible;
   }
