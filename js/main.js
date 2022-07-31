@@ -79,7 +79,7 @@ let executed = false;
 window.addEventListener('scroll', function() {
 
   const y = window.scrollY // 스크롤 위치 계산하는 변수
-  const scrollTrigger = document.querySelector('.donation').offsetTop - 400  //스크롤 애니메이션 줄 위치
+  const scrollTrigger = document.querySelector('.donation').offsetTop - 500  //스크롤 애니메이션 줄 위치
 
   if(!executed) { // if(execute == false)와 같음
     if(y >= scrollTrigger) {
