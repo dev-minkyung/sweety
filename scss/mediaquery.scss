@@ -249,6 +249,11 @@
   .event {
     width: 100vw;
     overflow: hidden;
+    .event-intro {
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
     .event-area {
       padding: 0 32px;
       overflow: visible;

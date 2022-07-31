@@ -54,7 +54,7 @@ h2 {
   font-size: 1.75rem;
   font-weight: 700;
   text-align: center;
-  line-height: 1.4; 
+  line-height: 1.4;
 }
 
 .logo {
@@ -227,7 +227,7 @@ header {
 /* TABLET */
 @media screen and (max-width:1024px) {
   .inner {
-    padding: 0 20px;
+    padding: 0 40px;
   }
   /* HEADER */
   header {
@@ -244,6 +244,9 @@ header {
 
 /* Mobile */
 @media screen and (max-width: 767px) {
+  .inner {
+    padding: 0 20px;
+  }
 
   /* HEADER */
   header {

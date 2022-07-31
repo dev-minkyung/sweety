@@ -282,8 +282,10 @@ main {
 
 /* EVENT */
 .event {
-
   .event-intro {
+    h2 {
+      letter-spacing: -0.05em;
+    }
     .event-btn {
       display: block;
       margin: 12px auto 32px;

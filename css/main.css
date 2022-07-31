@@ -176,7 +176,7 @@ header.sticky {
 /* TABLET */
 @media screen and (max-width: 1024px) {
   .inner {
-    padding: 0 20px;
+    padding: 0 40px;
   }
   /* HEADER */
   header nav .main-menu .login {
@@ -185,6 +185,9 @@ header.sticky {
 }
 /* Mobile */
 @media screen and (max-width: 767px) {
+  .inner {
+    padding: 0 20px;
+  }
   /* HEADER */
   header {
     height: 60px;
@@ -536,6 +539,9 @@ main .main-view .swiper-button-next:hover {
 }
 
 /* EVENT */
+.event .event-intro h2 {
+  letter-spacing: -0.05em;
+}
 .event .event-intro .event-btn {
   display: block;
   margin: 12px auto 32px;
