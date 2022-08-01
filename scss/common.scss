@@ -60,6 +60,10 @@ a {
   line-height: 20px;
 }
 
+strong {
+  font-weight: 700;
+}
+
 h2 {
   font-size: 1.75rem;
   font-weight: 300;
@@ -237,6 +241,108 @@ header {
 }
 
 
+/* FOOTER */
+footer {
+  background-color: $grey100;
+  margin-top: 80px;
+  .inner {
+    padding-top: 12px;
+  }
+
+  .footer-menu {
+    padding: 8px 0;
+    border-bottom: 1px solid $grey300;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      li {
+        padding:0 24px;
+        height: 40px;
+        line-height: 40px;
+        &:first-child {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+
+  .footer-info {
+    padding: 32px 0;
+    font-size: 0.75rem;
+    color: $grey500;
+    display: flex;
+    justify-content: space-between;
+
+    .customer-center {
+      flex-basis: 30%;
+      .corp-phone {
+        font-size: 1.5rem;
+        margin: 2px 0 16px;
+      }
+    }
+
+    .corp-info {
+      flex-basis: 30%;
+      .email {
+        strong {
+          color: $grey500;
+        }
+      }
+      ul {
+        margin: 16px 0;
+        li {
+          display: inline-block;
+          &::after {
+            content: '';
+            display: inline-block;
+            width: 1px;
+            height: 8px;
+            margin: 0 8px;
+            background-color: $grey300;
+          }
+
+          &:last-child {
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .sns-info {
+      flex-basis: 30%;
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        li {
+          text-align: center;
+          width: 78px;
+          padding: 12px 0;
+          border-radius: $radius-16;
+
+          i {
+            width: 100%;
+            font-size: 2rem;
+          }
+          span {
+            font-size: 0.75rem;
+          }
+
+          &:hover {
+            background-color: $grey200;
+            color: $brand-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+
 
 /* TABLET */
 @media screen and (max-width:1024px) {
@@ -322,4 +428,40 @@ header {
       }
     }
   }
+  
+  /* FOOTER */
+  footer {
+    margin-top: 60px;
+    .footer-menu {
+      ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        li {
+          padding: 0 24px 0 0;
+        }
+      }
+    }
+    .footer-info {
+      padding: 16px 0 24px;
+      flex-direction: column;
+      gap: 24px;
+
+      .customer-center {
+        order: 2;
+        .corp-phone {
+          margin-bottom: 8px;
+        }
+      }
+      .corp-info {
+        order: 3;
+        ul {
+          margin: 8px 0;
+        }
+      }
+      .sns-info {
+        order: 1;
+      }
+    }
+  }
 }
+

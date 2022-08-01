@@ -37,6 +37,10 @@ a {
   line-height: 20px;
 }
 
+strong {
+  font-weight: 700;
+}
+
 h2 {
   font-size: 1.75rem;
   font-weight: 300;
@@ -183,6 +187,95 @@ header.sticky {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* FOOTER */
+footer {
+  background-color: #F6F7F8;
+  margin-top: 80px;
+}
+footer .inner {
+  padding-top: 12px;
+}
+footer .footer-menu {
+  padding: 8px 0;
+  border-bottom: 1px solid #DEDEDE;
+}
+footer .footer-menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+footer .footer-menu ul li {
+  padding: 0 24px;
+  height: 40px;
+  line-height: 40px;
+}
+footer .footer-menu ul li:first-child {
+  padding-left: 0;
+}
+footer .footer-info {
+  padding: 32px 0;
+  font-size: 0.75rem;
+  color: #585858;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-info .customer-center {
+  flex-basis: 30%;
+}
+footer .footer-info .customer-center .corp-phone {
+  font-size: 1.5rem;
+  margin: 2px 0 16px;
+}
+footer .footer-info .corp-info {
+  flex-basis: 30%;
+}
+footer .footer-info .corp-info .email strong {
+  color: #585858;
+}
+footer .footer-info .corp-info ul {
+  margin: 16px 0;
+}
+footer .footer-info .corp-info ul li {
+  display: inline-block;
+}
+footer .footer-info .corp-info ul li::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 8px;
+  margin: 0 8px;
+  background-color: #DEDEDE;
+}
+footer .footer-info .corp-info ul li:last-child::after {
+  display: none;
+}
+footer .footer-info .sns-info {
+  flex-basis: 30%;
+}
+footer .footer-info .sns-info ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+footer .footer-info .sns-info ul li {
+  text-align: center;
+  width: 78px;
+  padding: 12px 0;
+  border-radius: 16px;
+}
+footer .footer-info .sns-info ul li i {
+  width: 100%;
+  font-size: 2rem;
+}
+footer .footer-info .sns-info ul li span {
+  font-size: 0.75rem;
+}
+footer .footer-info .sns-info ul li:hover {
+  background-color: #F2F3F4;
+  color: #EC6472;
+}
+
 /* TABLET */
 @media screen and (max-width: 1024px) {
   .inner {
@@ -257,5 +350,36 @@ header.sticky {
   }
   header nav .my-menu .icon-my {
     padding: 12px 0;
+  }
+  /* FOOTER */
+  footer {
+    margin-top: 60px;
+  }
+  footer .footer-menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer .footer-menu ul li {
+    padding: 0 24px 0 0;
+  }
+  footer .footer-info {
+    padding: 16px 0 24px;
+    flex-direction: column;
+    gap: 24px;
+  }
+  footer .footer-info .customer-center {
+    order: 2;
+  }
+  footer .footer-info .customer-center .corp-phone {
+    margin-bottom: 8px;
+  }
+  footer .footer-info .corp-info {
+    order: 3;
+  }
+  footer .footer-info .corp-info ul {
+    margin: 8px 0;
+  }
+  footer .footer-info .sns-info {
+    order: 1;
   }
 }
