@@ -73,6 +73,7 @@ const eventArea = new Swiper('.event-area', {
 
 
 
+
 /* .donation 스크롤양에 맞춰 숫자 애니메이션 구현하기 (Number animation by Scroll) */
 let executed = false;
 
@@ -89,10 +90,11 @@ window.addEventListener('scroll', function() {
         let num = 0;
         let targetNum = numAni[idx].getAttribute('data-rate');
         let intervalTime = 10;
-  
-        //data-rate 속성값이 500보다 크면 시간을 0.005초로 바꿈.
-        if(targetNum > 500){
-          intervalTime = 0.0001;
+    
+        //data-rate 속성값이 10000000보다 크면 시간을 0.0000000000000001초로 바꿈.
+        if(targetNum > 10000000){
+          num = 29842999;
+          intervalTime = 0.0000000000000001;
         } 
         
         // num-ani 클래스 인덱스마다 data-rate 속성값만큼 숫자 카운트 애니메이션 효과주기
@@ -115,33 +117,20 @@ window.addEventListener('scroll', function() {
 });
 
 
+/*
+let valueDipsplays = document.querySelectorAll('.num-ani');
+let interval = 4000;
 
-
-
-/* 숫자 카운트 애니메이션 
-const numAni = document.querySelectorAll('.num-ani');
-
-function changeNum(idx){
-  let num = 0;
-  let targetNum = numAni[idx].getAttribute('data-rate');
-  let intervalTime = 10;
-
-  //data-rate 속성값이 500보다 크면 시간을 0.005초로 바꿈.
-  if(targetNum > 500){
-    intervalTime = 0.0001;
-  } 
-  
-  // num-ani 클래스 인덱스마다 data-rate 속성값만큼 숫자 카운트 애니메이션 효과주기
-  let timer = setInterval(function(){
-    ++num;
-    numAni[idx].innerText = num;
-    if(num == targetNum){
-      clearInterval(timer);
+valueDipsplays.forEach((valueDipsplay) => {
+  let startValue = 0;
+  let endValue =parseInt(valueDipsplay.getAttribute('data-rate'));
+  let duration = Math.floor(interval / endValue);
+  let counter = setInterval(function () {
+    startValue += 1;
+    valueDipsplay.textContent = startValue;
+    if (startValue == endValue) {
+      clearInterval(counter);
     }
-  }, intervalTime);
-}
-
-for(let i = 0; i < numAni.length; i++){
-  changeNum(i);
-}
+  }, duration);
+});
 */

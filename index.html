@@ -146,6 +146,7 @@
   <!-- Product -->
   <section class="product">
     <div class="inner">
+
       <!-- Doguhp 소개 -->
       <article class="product-content doughp">
         <div class="product-img"><img src="./images/Doughp-chocolate.png" alt=""></div>
@@ -165,6 +166,7 @@
           </button>
         </div>
       </article>
+
       <!-- Lovecorn 소개 -->
       <article class="product-content lovecorn">
         <div class="product-img"><img src="./images/Lovecorn-salt.png" alt=""></div>
@@ -187,45 +189,36 @@
     </div>
   </section>
 
-  <!-- Youtube 
-  <section class="youtube">
-    <div class="inner">
-      <div class="youtube-title">
-        <h2>
-          스위티가 제안하는 다양한 레시피를<br/>
-          유튜브에서 보고 따라해보세요!
-        </h2>
-        <button class="youtube-link" type="button">
-          <a class="btn--text" href="javascript:void(0)">
-            Sweety 유튜브 보러가기<i class="fa-solid fa-arrow-right-long"></i>
-          </a>
-        </button>
-      </div>
-      <div class="youtube-play">
-        <div id="player"></div>
-      </div>
-    </div>
-  </section>
--->
-
+  <!-- DONATION -->
   <section class="donation">
     <div class="donation-container">
       <div class="donation-title">
-        <h2>모든 구매의 일부는 사회적 도움이 필요한 아이들을 위해 초록우산 어린이재단에 기부됩니다.</h2>
+        <h2>
+          <strong>모든 구매의 일부</strong>는 사회적 도움이 필요한 아이들을 위해<br/> 
+          <strong>초록우산 어린이재단</strong>에 기부됩니다.
+        </h2>
+        <div class="donation-date">
+          <span class="this-year-month"></span><span> 기준</span>
+        </div>
       </div>
       <div class="donation-count">
-        <div class="num-ani" data-rate="123">0</div>
-        <div class="num-ani" data-rate="1223">0</div>
+        <div class="count-times count">
+          <span class="num-ani" data-rate="123">0</span><span>기부 횟수</span>
+        </div>
+        <div class="count-sum count">
+          <span class="num-ani" data-rate="29843617">0</span><span>총 기부 금액</span>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- EVENT -->
   <section class="event">
     <div class="inner">
       <div class="event-intro">
         <h2>
-          놓칠 수 없는 특별 기획전!<br/>
-          시즌별 제품을 만나보세요. 
+          <strong>놓칠 수 없는 특별 기획전!</strong><br/>
+          <strong>시즌별 제품</strong>을 만나보세요. 
         </h2>
         <button class="event-btn" type="button">
           <a href="javascript:void(0)">
@@ -233,7 +226,7 @@
           </a>
         </button>
 
-      <div class="event-area">
+      <article class="event-area">
         <div class="swiper-wrapper">
           <div class="event-content swiper-slide">
             <a href="javascript:void(0)">
@@ -285,16 +278,38 @@
           </div>
         </div>
       
-        <!-- If we need navigation buttons -->
-        <div class="event-button-prev">
-          <i class="fa-solid fa-arrow-left"></i>
-        </div>
-        <div class="event-button-next">
-          <i class="fa-solid fa-arrow-right"></i>
-        </div>
-
+        <div class="event-button-prev"><i class="fa-solid fa-arrow-left"></i></div>
+        <div class="event-button-next"><i class="fa-solid fa-arrow-right"></i></div>
         <div class="swiper-pagination"></div>
       
+      </article>
+    </div>
+  </section>
+
+  <!-- BULK -->
+  <section class="bulk">
+    <div class="inner">
+      <div class="bulk-container">
+        <div class="bulk-info">
+          <div class="bulk-title">
+            <h2><strong>대량 구매</strong> 문의하기</h2>
+            <p class="bulk-text">
+              대량구매를 원하시는 고객님은 개별 문의 해 주시면 <br/>
+              상품 금액대별 추가 할인 혜택을 제공합니다.
+            </p>
+          </div>
+          <div class="bulk-btn">
+            <button type="button">
+              <a href="tel:010-0000-0000"><i class="fa-solid fa-phone"></i> 010-0000-0000</a>
+            </button>
+            <button type="button">
+              <a href="javascript:void(0)"><i class="fa-solid fa-clipboard-list"></i> 게시판 문의하기</a>
+            </button>
+          </div>
+        </div>
+
+        <img src="./images/doughp-bulk.png" alt="doughp-bulk">
+
       </div>
     </div>
   </section>

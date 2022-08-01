@@ -24,3 +24,22 @@ function onYouTubeIframeAPIReady() {
 
   });
 }
+
+
+const thisYear = document.querySelector('.this-year');
+const thisYearMonth = document.querySelector('.this-year-month');
+//thisYear.textContent = new Date().getFullYear().getMonth(); //올해의 연도가 입력됨.
+
+const todayYear = new Date().getFullYear();
+const todayMonth = new Date().getMonth() + 1;
+
+const todayYYYYMM = todayYear + '년 ' + todayMonth + '월';
+
+//thisYearMonth.textContent = todayYYYYMM;
+
+document.querySelector(".this-year-month").innerHTML = todayYear + '<span class="date-text">년 </span>' + todayMonth + '<span class="date-text">월</span>';
+
+/*
+const thisYear = document.querySelector('.this-year');
+thisYear.textContent = new Date().getFullYear(); //올해의 연도가 입력됨.
+*/

@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "LAB디지털";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 /* COMMON */
 body {
   height: 4000px;
@@ -33,9 +39,13 @@ a {
 
 h2 {
   font-size: 1.75rem;
-  font-weight: 700;
+  font-weight: 300;
+  letter-spacing: -0.05em;
   text-align: center;
   line-height: 1.4;
+}
+h2 strong {
+  font-weight: 700;
 }
 
 .logo a {
@@ -187,6 +197,9 @@ header.sticky {
 @media screen and (max-width: 767px) {
   .inner {
     padding: 0 20px;
+  }
+  h2 {
+    font-size: 1.5rem;
   }
   /* HEADER */
   header {
@@ -416,7 +429,7 @@ main .main-view .swiper-button-next::after {
     margin-bottom: 60px;
   }
   .product .doughp::before {
-    background-color: #EFE5D5;
+    background-color: #F8F3EB;
   }
   .product .doughp .product-img {
     order: 1;
@@ -445,13 +458,27 @@ main .main-view .swiper-button-next::after {
     width: 140%;
     height: 140%;
   }
+  /* Donation */
+  .donation {
+    height: 600px;
+  }
+  .donation .donation-container .donation-title {
+    width: 80%;
+    margin: 0 auto;
+    word-break: keep-all;
+  }
+  .donation .donation-container .donation-count {
+    flex-direction: column;
+    gap: 0;
+    margin-top: 24px;
+  }
+  .donation .donation-container .donation-count .count {
+    padding: 24px 0;
+  }
   /* Event */
   .event {
     width: 100vw;
     overflow: hidden;
-  }
-  .event .event-intro h2 {
-    font-size: 1.5rem;
   }
   .event .event-area {
     padding: 0 32px;
@@ -462,6 +489,32 @@ main .main-view .swiper-button-next::after {
   }
   .event .event-area .event-button-next {
     right: 4px;
+  }
+  /* BULK */
+  .bulk .bulk-container {
+    height: 500px;
+  }
+  .bulk .bulk-container .bulk-info {
+    width: 100%;
+    height: 60%;
+    padding: 10% 6%;
+    text-align: center;
+  }
+  .bulk .bulk-container .bulk-info h2 {
+    text-align: center;
+  }
+  .bulk .bulk-container .bulk-info .bulk-text {
+    font-size: 0.875rem;
+  }
+  .bulk .bulk-container .bulk-info .bulk-btn {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .bulk .bulk-container .bulk-info .bulk-btn button {
+    width: 100%;
+  }
+  .bulk .bulk-container .bulk-info .bulk-btn button a {
+    line-height: 48px;
   }
 }
 /* 모바일 웹 호버 효과 제외 */

@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "LAB디지털";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 /* COMMON */
 body {
   height: 4000px;
@@ -33,9 +39,13 @@ a {
 
 h2 {
   font-size: 1.75rem;
-  font-weight: 700;
+  font-weight: 300;
+  letter-spacing: -0.05em;
   text-align: center;
   line-height: 1.4;
+}
+h2 strong {
+  font-weight: 700;
 }
 
 .logo a {
@@ -188,6 +198,9 @@ header.sticky {
   .inner {
     padding: 0 20px;
   }
+  h2 {
+    font-size: 1.5rem;
+  }
   /* HEADER */
   header {
     height: 60px;
@@ -296,6 +309,7 @@ header.sticky {
     transform: translateX(0);
   }
 }
+/* MAIN VIEW */
 main {
   padding-top: 68px;
 }
@@ -395,6 +409,7 @@ main .main-view .swiper-button-next:hover {
   color: #191919;
 }
 
+/* ICON MENU */
 .icon-menu {
   padding-top: 48px;
 }
@@ -433,6 +448,7 @@ main .main-view .swiper-button-next:hover {
           animation: shake 1.2s 1 ease;
 }
 
+/* PRODUCT */
 .product .product-content {
   display: flex;
   justify-content: space-between;
@@ -498,44 +514,10 @@ main .main-view .swiper-button-next:hover {
   width: 70%;
   height: 110%;
   border-radius: 50% 50% 16px 16px;
-  background-color: #EFE5D5;
+  background-color: #F8F3EB;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-/*  YOUTUBE */
-.youtube {
-  background-image: url("../images/bg-heartLine.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-y: 80%;
-}
-.youtube .youtube-title .youtube-link {
-  display: block;
-  margin: 0 auto;
-}
-.youtube .youtube-play {
-  width: 65%;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-}
-.youtube .youtube-play::before {
-  content: "";
-  display: block;
-  height: 0;
-  padding-top: 56.25%;
-}
-.youtube .youtube-play #player {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 16px;
-  overflow: hidden;
 }
 
 /* DONATION */
@@ -553,14 +535,39 @@ main .main-view .swiper-button-next:hover {
 .donation .donation-container {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 80px 0;
+  padding: 60px 0;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.donation .donation-container .donation-title .donation-date {
+  font-size: 0.875rem;
+  text-align: center;
+  margin-top: 12px;
+  color: #868686;
+}
+.donation .donation-container .donation-count {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
+}
+.donation .donation-container .donation-count .count {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.donation .donation-container .donation-count .count .num-ani {
+  font-size: 3.5rem;
+  font-weight: 500;
+  font-family: "LAB디지털";
 }
 
 /* EVENT */
-.event .event-intro h2 {
-  letter-spacing: -0.05em;
-}
 .event .event-intro .event-btn {
   display: block;
   margin: 12px auto 32px;
@@ -689,4 +696,69 @@ main .main-view .swiper-button-next:hover {
 }
 .event .event-area .event-button-next {
   right: 20px;
+}
+
+/* BULK */
+.bulk {
+  margin-top: 60px;
+}
+.bulk .bulk-container {
+  position: relative;
+  height: 320px;
+  background-color: #F6F7F8;
+  border-radius: 16px;
+}
+.bulk .bulk-container .bulk-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 4% 5%;
+  box-sizing: border-box;
+}
+.bulk .bulk-container .bulk-info h2 {
+  text-align: left;
+  margin-bottom: 12px;
+}
+.bulk .bulk-container .bulk-info .bulk-text {
+  color: #868686;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+}
+.bulk .bulk-container .bulk-info .bulk-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.bulk .bulk-container .bulk-info .bulk-btn button {
+  flex: 1 1 50%;
+  border: 2px solid rgba(25, 25, 25, 0.05);
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: all 0.4s;
+}
+.bulk .bulk-container .bulk-info .bulk-btn button a {
+  width: 100%;
+  font-size: 1rem;
+  line-height: 80px;
+}
+.bulk .bulk-container .bulk-info .bulk-btn button:hover {
+  border-color: #191919;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 4px 4px #191919;
+  transform: translate(-2px, -2px);
+}
+.bulk .bulk-container img {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  width: 30%;
+  max-width: 400px;
+  min-width: 250px;
 }
