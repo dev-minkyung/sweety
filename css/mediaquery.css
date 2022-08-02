@@ -1,10 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "LAB디지털";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
 /* COMMON */
 body {
   height: 4000px;
@@ -593,8 +587,11 @@ main .main-view .swiper-button-next::after {
   /* Donation - Mobile */
   .donation {
     background-size: cover;
-    height: 600px;
+    height: auto;
     margin-top: 60px;
+  }
+  .donation .donation-container {
+    padding: 80px 0;
   }
   .donation .donation-container .donation-title {
     width: 80%;
@@ -609,7 +606,7 @@ main .main-view .swiper-button-next::after {
   .donation .donation-container .donation-count .count {
     padding: 14px 0;
   }
-  .donation .donation-container .donation-count .count .num-ani {
+  .donation .donation-container .donation-count .count .count-num {
     font-size: 3rem;
   }
   /* Event - Mobile */
@@ -663,18 +660,12 @@ main .main-view .swiper-button-next::after {
   }
   .store .store-container .store-info .store-about {
     margin: 0 0 16px;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
   }
   .store .store-container .store-info .store-about br {
     display: none;
   }
   .store .store-container .store-info .store-about .store-about-1 {
     display: none;
-  }
-  .store .store-container .store-info .store-content li {
-    font-size: 0.875rem;
-  }
-  .store .store-container .store-info .store-content li a {
-    font-size: 0.875rem;
   }
 }

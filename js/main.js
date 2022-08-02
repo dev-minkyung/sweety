@@ -72,7 +72,28 @@ const eventArea = new Swiper('.event-area', {
 });
 
 
-/* .donation 스크롤양에 맞춰 숫자 애니메이션 구현하기 (Number animation by Scroll) */
+let numValue = document.querySelector('.count-num');
+let num = numValue.getAttribute('data-rate');
+let interval = 3000;
+
+let startValue = 0;
+let endValue = parseInt(num);
+let duration = Math.floor(interval / endValue);
+let counter = setInterval(function () {
+  startValue += 1;
+  startValue += 100;
+  startValue += 10000;
+  startValue += 100000;
+  numValue.textContent = startValue.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
+  if (startValue >= endValue) {
+    clearInterval(counter);
+  }
+}, duration);
+
+
+
+/* .donation 스크롤양에 맞춰 숫자 애니메이션 구현하기 (Number animation by Scroll) 
 let executed = false;
 
 window.addEventListener('scroll', function() {
@@ -113,7 +134,7 @@ window.addEventListener('scroll', function() {
     } //if 조건문
   } // executed if
 });
-
+*/
 
 /*
 let valueDipsplays = document.querySelectorAll('.num-ani');
