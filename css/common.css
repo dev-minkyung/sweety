@@ -132,6 +132,9 @@ header nav .main-menu .menu-list ul {
 header nav .main-menu .menu-list ul li {
   line-height: 68px;
 }
+header nav .main-menu .menu-list ul li:hover {
+  font-weight: 700;
+}
 header nav .main-menu .menu-list .sub-menu {
   display: none;
   position: absolute;
@@ -335,6 +338,9 @@ footer .footer-info .sns-info ul li:hover {
   }
   header nav .main-menu .menu-list ul li:hover {
     background-color: #F6F7F8;
+  }
+  header nav .main-menu .menu-list ul li:hover {
+    font-weight: normal;
   }
   header nav .main-menu .login {
     position: static;

@@ -178,6 +178,9 @@ header {
           gap: 32px;
           li {
             line-height:  68px;
+            &:hover {
+              font-weight: 700;
+            }
           }
         }
         .sub-menu {
@@ -234,7 +237,6 @@ header {
       }
     }
   }
-
   /* Header 스크롤 이벤트 */
   &.sticky {
     box-shadow: 0 2px 6px rgba(#000, .1);
@@ -386,7 +388,6 @@ footer {
         transition: opacity .8s;
         visibility: hidden;
         opacity: 0;
-        
         position: absolute;
         bottom: 6px;
         right: 0;
@@ -402,6 +403,9 @@ footer {
             li {
               line-height: 24px;
               @include menuLink;
+              &:hover {
+                font-weight: normal;
+              }
             }
           }
         }

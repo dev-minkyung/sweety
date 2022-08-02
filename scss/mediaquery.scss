@@ -2,7 +2,8 @@
 
 /* TABLET */
 @media screen and (max-width:1024px) {
-  /* MAIN */
+
+  /* MAIN VIEW - Tablet */
   main {
     .main-view {
       .swiper-slide {
@@ -26,7 +27,7 @@
     }
   }
 
-  /* Icon-menu */
+  /* Icon-menu - Tablet */
   .icon-menu {
     ul {
       gap: 16px;
@@ -52,7 +53,7 @@
     }
   }
 
-  /* Product */
+  /* Product - Tablet */
   .product {
     .product-content {
       padding: 0;
@@ -68,7 +69,7 @@
     }
   }
 
-  /* STORE */
+  /* STORE - Tablet */
   .store {
     .store-container {
       flex-direction: column;
@@ -96,12 +97,13 @@
 
 /* Mobile */
 @media screen and (max-width: 767px) {
-  /* COMMON */
+  
+  /* COMMON - Mobile */
   section {
     padding-top: 60px;
   }
 
-  /* MAIN */
+  /* MAIN VIEW - Mobile */
   main {
     padding-top: 60px; 
     .main-view {
@@ -150,7 +152,7 @@
     }
   }
 
-  /* Icon-menu */
+  /* Icon-menu - Mobile */
   .icon-menu {
     padding-top: 16px;
     ul {
@@ -176,7 +178,7 @@
     }
   }
 
-  /* Product */
+  /* Product - Mobile */
   .product {
     .product-content {
       flex-direction: column;
@@ -242,10 +244,12 @@
   }
 
 
-  /* Donation */
+  /* Donation - Mobile */
   .donation {
     background-size: cover;
     height: 600px;
+    margin-top: 60px;
+    
     .donation-container {
       .donation-title {
         width: 80%;
@@ -266,7 +270,7 @@
     }
   }
 
-  /* Event */
+  /* Event - Mobile */
   .event {
     width: 100vw;
     overflow: hidden;
@@ -318,7 +322,7 @@
     }
   }
 
-  /* STORE */
+  /* STORE - Mobile */
   .store {
     .store-container {
       .store-info {
@@ -345,14 +349,5 @@
         }
       }
     }
-  }
-}
-
-
-/* 모바일 웹 호버 효과 제외 */
-@media (hover: hover) {
-  .event-button-prev:hover,
-  .event-button-next:hover {
-    background-color: $grey300;
   }
 }
