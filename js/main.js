@@ -72,6 +72,43 @@ const eventArea = new Swiper('.event-area', {
 });
 
 
+let executed = false;
+
+window.addEventListener('scroll', function() {
+
+  const y = window.scrollY // 스크롤 위치 계산하는 변수
+  const scrollTrigger = document.querySelector('.donation').offsetTop - 500  //스크롤 애니메이션 줄 위치
+
+  if(!executed) { // if(execute == false)와 같음
+    if(y >= scrollTrigger) {
+
+      let numValue = document.querySelector('.count-num');
+      let num = numValue.getAttribute('data-rate');
+      let interval = 3000;
+
+      let startValue = 0;
+      let endValue = parseInt(num);
+      let duration = Math.floor(interval / endValue);
+      let counter = setInterval(function () {
+        startValue += 1;
+        startValue += 100;
+        startValue += 10000;
+        startValue += 100000;
+        numValue.textContent = startValue.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
+        if (startValue >= endValue) {
+          clearInterval(counter);
+        }
+      }, duration);
+
+      executed = true;
+
+    } //if 조건문
+  } // executed if
+});
+
+/*
+
 let numValue = document.querySelector('.count-num');
 let num = numValue.getAttribute('data-rate');
 let interval = 3000;
@@ -91,7 +128,7 @@ let counter = setInterval(function () {
   }
 }, duration);
 
-
+*/
 
 /* .donation 스크롤양에 맞춰 숫자 애니메이션 구현하기 (Number animation by Scroll) 
 let executed = false;
@@ -133,24 +170,6 @@ window.addEventListener('scroll', function() {
       executed = true;
     } //if 조건문
   } // executed if
-});
-*/
-
-/*
-let valueDipsplays = document.querySelectorAll('.num-ani');
-let interval = 4000;
-
-valueDipsplays.forEach((valueDipsplay) => {
-  let startValue = 0;
-  let endValue =parseInt(valueDipsplay.getAttribute('data-rate'));
-  let duration = Math.floor(interval / endValue);
-  let counter = setInterval(function () {
-    startValue += 1;
-    valueDipsplay.textContent = startValue;
-    if (startValue == endValue) {
-      clearInterval(counter);
-    }
-  }, duration);
 });
 */
 

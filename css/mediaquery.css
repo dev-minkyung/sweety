@@ -668,4 +668,7 @@ main .main-view .swiper-button-next::after {
   .store .store-container .store-info .store-about .store-about-1 {
     display: none;
   }
+  .store .store-container .store-map iframe {
+    height: 320px;
+  }
 }
