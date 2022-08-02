@@ -517,3 +517,44 @@ main {
     }
   }
 }
+
+/* STORE */
+.store {
+  .store-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    
+    .store-info {
+      margin-top: 24px;
+      h2 {
+        text-align: left;
+      }
+      .store-about {
+        color: $grey400;
+        font-weight: 300;
+        letter-spacing: -0.025em;
+        margin: 12px 0 48px;
+      }
+      .store-content {
+        li {
+          line-height: 36px;
+          color: $black;
+          a {
+            font-size: 1rem;
+            &:hover {
+              color: $brand-color;
+            }
+          }
+          i {
+            margin-right: 12px;
+          }
+        }
+      }
+    }
+    
+    .store-map {
+      flex-basis: 60%;
+    }
+  }
+}

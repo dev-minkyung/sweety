@@ -72,8 +72,6 @@ const eventArea = new Swiper('.event-area', {
 });
 
 
-
-
 /* .donation 스크롤양에 맞춰 숫자 애니메이션 구현하기 (Number animation by Scroll) */
 let executed = false;
 
@@ -90,7 +88,7 @@ window.addEventListener('scroll', function() {
         let num = 0;
         let targetNum = numAni[idx].getAttribute('data-rate');
         let intervalTime = 10;
-    
+
         //data-rate 속성값이 10000000보다 크면 시간을 0.0000000000000001초로 바꿈.
         if(targetNum > 10000000){
           num = 29842999;
@@ -134,3 +132,13 @@ valueDipsplays.forEach((valueDipsplay) => {
   }, duration);
 });
 */
+
+
+/* 날짜 자동 계산 (donation / footer) */
+const todayYear = new Date().getFullYear();
+const todayMonth = new Date().getMonth() + 1;
+
+const todayYYYYMM = todayYear + '년 ' + todayMonth + '월';
+
+document.querySelector(".this-year-month").innerHTML = todayYear + '<span class="date-text">년 </span>' + todayMonth + '<span class="date-text">월</span>';
+document.querySelector('.this-year').innerHTML = todayYear

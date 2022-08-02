@@ -36,6 +36,7 @@ body {
   line-height: 1.4;
   max-width: 1920px;
   font-family:'Roboto' ,'Noto Sans KR', 'sans-serif';
+  word-break: keep-all;
 }
 
 section {
@@ -246,7 +247,7 @@ footer {
   background-color: $grey100;
   margin-top: 80px;
   .inner {
-    padding-top: 12px;
+    padding-top: 6px;
   }
 
   .footer-menu {
@@ -349,7 +350,7 @@ footer {
   .inner {
     padding: 0 40px;
   }
-  /* HEADER */
+  /* HEADER - TABLET */
   header {
     nav {
       .main-menu {
@@ -371,8 +372,7 @@ footer {
     font-size: 1.5rem;
   }
 
-
-  /* HEADER */
+  /* HEADER - MOBILE*/
   header {
     height: 60px;
     .logo {
@@ -429,12 +429,9 @@ footer {
     }
   }
   
-  /* FOOTER */
+  /* FOOTER - MOBILE */
   footer {
     margin-top: 60px;
-    .inner {
-      padding-top: 6px;
-    }
     .footer-menu {
       ul {
         flex-wrap: wrap;

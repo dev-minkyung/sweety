@@ -13,6 +13,7 @@ body {
   line-height: 1.4;
   max-width: 1920px;
   font-family: "Roboto", "Noto Sans KR", "sans-serif";
+  word-break: keep-all;
 }
 
 section {
@@ -193,7 +194,7 @@ footer {
   margin-top: 80px;
 }
 footer .inner {
-  padding-top: 12px;
+  padding-top: 6px;
 }
 footer .footer-menu {
   padding: 8px 0;
@@ -281,7 +282,7 @@ footer .footer-info .sns-info ul li:hover {
   .inner {
     padding: 0 40px;
   }
-  /* HEADER */
+  /* HEADER - TABLET */
   header nav .main-menu .login {
     right: 20px;
   }
@@ -294,7 +295,7 @@ footer .footer-info .sns-info ul li:hover {
   h2 {
     font-size: 1.5rem;
   }
-  /* HEADER */
+  /* HEADER - MOBILE*/
   header {
     height: 60px;
   }
@@ -351,12 +352,9 @@ footer .footer-info .sns-info ul li:hover {
   header nav .my-menu .icon-my {
     padding: 12px 0;
   }
-  /* FOOTER */
+  /* FOOTER - MOBILE */
   footer {
     margin-top: 60px;
-  }
-  footer .inner {
-    padding-top: 6px;
   }
   footer .footer-menu ul {
     flex-wrap: wrap;
