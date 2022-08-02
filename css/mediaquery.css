@@ -588,6 +588,7 @@ main .main-view .swiper-button-next::after {
   .donation {
     height: auto;
     margin-top: 60px;
+    background-attachment: scroll;
   }
   .donation .donation-container {
     padding: 80px 0;
