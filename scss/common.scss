@@ -432,12 +432,17 @@ footer {
   /* FOOTER */
   footer {
     margin-top: 60px;
+    .inner {
+      padding-top: 6px;
+    }
     .footer-menu {
       ul {
         flex-wrap: wrap;
         justify-content: center;
         li {
           padding: 0 24px 0 0;
+          height: 32px;
+          line-height: 32px;
         }
       }
     }
@@ -460,6 +465,13 @@ footer {
       }
       .sns-info {
         order: 1;
+        ul {
+          li {
+            i {
+              font-size: 1.5rem;
+            }
+          }
+        }
       }
     }
   }

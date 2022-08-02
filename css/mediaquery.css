@@ -355,12 +355,17 @@ footer .footer-info .sns-info ul li:hover {
   footer {
     margin-top: 60px;
   }
+  footer .inner {
+    padding-top: 6px;
+  }
   footer .footer-menu ul {
     flex-wrap: wrap;
     justify-content: center;
   }
   footer .footer-menu ul li {
     padding: 0 24px 0 0;
+    height: 32px;
+    line-height: 32px;
   }
   footer .footer-info {
     padding: 16px 0 24px;
@@ -381,6 +386,9 @@ footer .footer-info .sns-info ul li:hover {
   }
   footer .footer-info .sns-info {
     order: 1;
+  }
+  footer .footer-info .sns-info ul li i {
+    font-size: 1.5rem;
   }
 }
 /* TABLET */
