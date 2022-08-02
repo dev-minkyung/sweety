@@ -218,35 +218,10 @@
     }
   }
 
-  /* Youtube */
-  .youtube {
-    background-size: 105%;
-    .youtube-title {
-      h2 {
-        font-size: 1rem;
-      }
-      .youtube-link {
-        a {
-          font-size: .875rem;
-          padding: 12px 0 24px;
-        }
-      }
-    }
-
-    .youtube-play {
-      width: 95%;
-      &::before {
-        padding-top: 75%;
-      }
-      #player {
-        width: 140%;
-        height: 140%;
-      }
-    }
-  }
 
   /* Donation */
   .donation {
+    background-size: cover;
     height: 600px;
     .donation-container {
       .donation-title {
@@ -259,7 +234,10 @@
         gap: 0;
         margin-top: 24px;
         .count {
-          padding: 24px 0;
+          padding: 12px 0;
+          .num-ani {
+            font-size: 3rem;
+          }
         }
       }
     }

@@ -569,29 +569,9 @@ main .main-view .swiper-button-next::after {
   .product .doughp .product-info {
     order: 2;
   }
-  /* Youtube */
-  .youtube {
-    background-size: 105%;
-  }
-  .youtube .youtube-title h2 {
-    font-size: 1rem;
-  }
-  .youtube .youtube-title .youtube-link a {
-    font-size: 0.875rem;
-    padding: 12px 0 24px;
-  }
-  .youtube .youtube-play {
-    width: 95%;
-  }
-  .youtube .youtube-play::before {
-    padding-top: 75%;
-  }
-  .youtube .youtube-play #player {
-    width: 140%;
-    height: 140%;
-  }
   /* Donation */
   .donation {
+    background-size: cover;
     height: 600px;
   }
   .donation .donation-container .donation-title {
@@ -605,7 +585,10 @@ main .main-view .swiper-button-next::after {
     margin-top: 24px;
   }
   .donation .donation-container .donation-count .count {
-    padding: 24px 0;
+    padding: 12px 0;
+  }
+  .donation .donation-container .donation-count .count .num-ani {
+    font-size: 3rem;
   }
   /* Event */
   .event {
