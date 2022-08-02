@@ -586,7 +586,6 @@ main .main-view .swiper-button-next::after {
   }
   /* Donation - Mobile */
   .donation {
-    background-size: cover;
     height: auto;
     margin-top: 60px;
   }

@@ -1,10 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "LAB디지털";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
 /* COMMON */
 body {
   height: 4000px;
@@ -665,8 +659,11 @@ main .main-view .swiper-button-next:hover {
   background-image: url("../images/bg-children.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
   background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
 }
 .donation .donation-container {
   height: 100%;

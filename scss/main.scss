@@ -253,8 +253,11 @@ main {
   background-image: url('../images/bg-children.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
   background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
 
   .donation-container {
     height: 100%;
