@@ -249,9 +249,15 @@
     height: auto;
     margin-top: 60px;
     background-attachment: scroll;
-    
+
     .donation-container {
       padding: 80px 0;
+      background: linear-gradient(to top, #fff, rgba(#fff, 0.8) 50%);
+      background: -webkit-linear-gradient(to top, #fff, rgba(#fff, 0.8) 50%);
+      background: -moz-linear-gradient(to top, #fff, rgba(#fff, 0.8) 50%);
+      background: -o-linear-gradient(to top, #fff, rgba(#fff, 0.8) 50%);
+    
+
       .donation-title {
         width: 80%;
         margin: 0 auto;
